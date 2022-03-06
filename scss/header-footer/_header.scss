@@ -1,7 +1,7 @@
 header{
     position: relative;
     height: 100vh;
-    width: 98.75vw;
+    width: 100vw;
     z-index: 50;
     .ratio{
         position: absolute;
@@ -40,7 +40,7 @@ header{
     }
 }
 .headerPages{
-    width: 98.75vw;
+    width: 100vw;
     height: 15vh;
     background-color: $fondoHeader;
     .navBarResponsive{

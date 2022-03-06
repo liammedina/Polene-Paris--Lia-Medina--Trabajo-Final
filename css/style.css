@@ -32,7 +32,7 @@
 header {
   position: relative;
   height: 100vh;
-  width: 98.75vw;
+  width: 100vw;
   z-index: 50; }
   header .ratio {
     position: absolute; }
@@ -64,7 +64,7 @@ header {
         align-items: center; }
 
 .headerPages {
-  width: 98.75vw;
+  width: 100vw;
   height: 15vh;
   background-color: #535152; }
   .headerPages .navBarResponsive {
