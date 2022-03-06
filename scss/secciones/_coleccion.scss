@@ -1,0 +1,66 @@
+.mainColeccion{
+    background-image: linear-gradient(to right top, #6f6964, #8d8883, #aba9a4, #cccac6, #edede9);
+    width: 100%;
+    margin-top: 0%;
+    .portadaColeccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .imgPortada{
+            box-shadow: 5px 5px 10px rgb(87, 85, 85);
+            position: relative;
+            margin-top: 14vh;
+            width: 50vw;
+        }
+        .pColeccion{
+            position: absolute;
+            z-index: 1;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 10vh;
+            margin-top: 24vh;
+            margin-right: 40vw;
+            text-shadow: 5px 5px 10px rgb(87, 85, 85);
+        }
+    }
+    .imgColeccion{
+        @include flex-column;
+        margin-top: 5vh;
+        align-items: center;
+        .videoColeccion{
+            width: 100%;
+        }
+    }
+}
+
+//MEDIA QUERYS//
+
+@media (max-width: 1024px){
+    main{
+        .portadaColeccion{
+            .pColeccion{
+                font-size: 8rem;
+            }
+        }
+    }
+}
+@media (max-width: 800px){
+    .mainColeccion{
+        .pColeccion{
+            font-size: 3rem;
+            margin: 5vh 5vw;
+        }
+    }
+    .imgColeccion{
+        margin-top: 10vh;
+    }
+}
+@media (max-width: 500px){
+    .mainColeccion{
+        .portadaColeccion{
+            .pColeccion{
+                font-size: 2rem;
+                margin: 3vh 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+main{
+    background-image: linear-gradient(to bottom, #535152, #4b4a4b, #434243, #3b3b3c, #343435, #2e2e2f, #272829, #212223, #1b1c1d, #141616, #0c0f0e, #020403);
+    .tituloBoutique{
+        width: 100%;
+        height: 30vh;
+        padding: 5% 5% 5% 5%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        color: $fontText;
+        text-align: center;
+        .polene{
+            font-family: 'Sora', sans-serif;
+            font-weight: bold;
+            color: $fontMarca;
+            text-shadow: 2px 2px 2px black ;
+            letter-spacing: 9px;
+        }
+    }
+    hr{
+        @extend %hr
+    }
+    .cardBoutique{
+        padding: 10vh 0;
+        @include flex-row;
+        align-items: center;
+        img{
+            width: 49vw;
+            border-radius: 5px;
+        }
+        .texto{
+            width: 50vw;
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: $fontCard1;
+            padding: 17vh 10vh;
+            text-align: center;
+        }
+        .mapa{
+            margin-top: 5vh;
+        }
+    }
+}
+
+//Media Querys//
+
+@media (max-width: 1080px){
+    main{
+        .tituloBoutique{
+            text-align: center;
+        }
+        .cardBoutique{
+            @include flex-column;
+            width: 100vw;
+            img{
+                width: 90vw;
+            }
+            .texto{
+                width: 90vw;
+                padding: 5vh 0;
+            }
+        }
+    }
+}
+@media (max-width: 600px){
+    main{
+        .cardBoutique{
+            .mapa{
+                width: 90vw;
+            }
+        }
+    }
+}

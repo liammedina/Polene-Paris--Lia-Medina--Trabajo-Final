@@ -1,0 +1,97 @@
+@mixin text-muted1($fontMarca,) {
+    color: $fontMarca;
+    @extend %fontMarca;
+}
+@mixin card1($anchoCard){
+    height: 70vh;
+    width: $anchoCard;
+    text-align: center;
+    margin: 4vh;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 4px 4px 8px rgb(44, 43, 43);
+    background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
+}
+@mixin card2($anchoCard1){
+    height: 80vh;
+    width: $anchoCard1;
+    text-align: center;
+    margin: 4vh;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 4px 4px 8px rgb(44, 43, 43);
+    background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
+}
+@mixin card3($anchoCard2){
+    height: 80vh;
+    width: $anchoCard2;
+    text-align: center;
+    margin: 4vh;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 4px 4px 8px rgb(44, 43, 43);
+    background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
+}
+@mixin card4($anchoCard3){
+    height: 80vh;
+    width: $anchoCard3;
+    text-align: center;
+    margin: 4vh;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 4px 4px 8px rgb(44, 43, 43);
+    background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
+}
+@mixin fotoProducto {
+    height: 50vh;
+}
+@mixin boutique($menu, $fontMarca, $fontCard1){
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+@mixin boton-color{
+    height: 40px;
+    width: 40px;
+    padding: 1.5vh;
+    border: solid 1px;
+    color: $fondoHeader;
+    margin: 3px 5px;
+    border-radius: 3px;
+}
+@mixin botonMediano-color{
+    height: 30px;
+    width: 30px;
+    padding: 1.3vh;
+    border: solid 1px;
+    color: $fondoHeader;
+    margin: 2px 4px;
+    border-radius: 3px;
+}
+@mixin botonChico-color{
+    height: 20px;
+    width: 20px;
+    padding: 1.1vh;
+    border: solid 1px;
+    color: $fondoHeader;
+    margin: 2px 3px;
+    border-radius: 2px;
+}
+@mixin hover-btn-color{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 300ms;
+}
+@mixin hover-btn-carrito{
+    cursor: pointer;
+    background-color: $fontCard1;
+    color: $fondoHeader;
+}

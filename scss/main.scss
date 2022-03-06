@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//VARIABLES
+
+@import './variables/medidas';
+@import './variables/colores';
+@import './variables/fuentes.scss';
+@import './variables/extend.scss'; 
+@import './variables/mixin';
+@import './variables/maps';
+
+//SECCIONES
+
+@import './header-footer/header';
+@import './secciones/index';
+@import './secciones/coleccion';
+@import './secciones/productos';
+@import './secciones/boutique'; 
+@import './secciones/contacto';
+@import './header-footer/footer';

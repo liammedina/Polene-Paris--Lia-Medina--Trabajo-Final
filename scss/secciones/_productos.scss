@@ -1,0 +1,233 @@
+.mainProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10rem auto;
+   .cardTienda{
+        @include flex-row;
+        width: 45vw;
+        height: 50vh;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px;
+        background-color: $FondoCard;
+        margin: 1.2rem;
+        .cardTalles{
+            @include flex-column;
+            height: 48vh;
+            width: 23vw;
+            align-items: center;
+            padding: 0 2vw;
+            .img{
+                height: 30vh;
+            }
+            p{
+                padding-top: 20px;
+                font-family: $menu;
+            }
+            .colores{
+                @include flex-row;
+                text-align: center;
+                .color1{
+                    background-color: #AB8F7C;
+                    @include boton-color;
+                    &:hover{
+                        @include hover-btn-color;
+                    }
+                }
+                .color2{
+                    background-color: #4F1B23;
+                    @include boton-color;
+                    &:hover{
+                        @include hover-btn-color;
+                    }
+                }
+                .color3{
+                    background-color: #03095e;
+                    @include boton-color;
+                    &:hover{
+                        @include hover-btn-color;
+                    }
+                }
+                .color4{
+                    background-color: #032b18;
+                    @include boton-color;
+                    &:hover{
+                        @include hover-btn-color;
+                    }
+                }
+                .color5{
+                    background-color: #f8d7dc;
+                    @include boton-color;
+                    &:hover{
+                        @include hover-btn-color;
+                    }
+                }
+            }
+        }
+        .cardDescripcion{
+            @include flex-column;
+            height: 48vh;
+            padding: 0 2vw;
+            .desc{
+                p.categoria{
+                    font-family: 'Lexend Tera', sans-serif;
+                    padding-top: 10px;
+                    font-weight: bolder;
+                }
+                .modelo{
+                    font-family: 'Lexend Tera', sans-serif;
+                    font-weight: bolder;
+                    font-size: 1.2rem;
+                }
+                h5{
+                    font-family: 'Lexend Tera', sans-serif;
+                    font-weight: bolder;
+                }
+                .pDesc{
+                    height: 17vh;
+                    font-family: $parrafo;
+                    font-size: .8rem;
+                    text-align: justify;
+                    margin-bottom: 1rem;
+                    margin-right: .9rem;
+                }
+            }
+            .boton{
+                width: 20vw;
+                .agregar{
+                    width: 15vw;
+                    height: 6vh;
+                    background-color: $fondoHeader;
+                    color: $fontText;
+                    border: 0;
+                    border-radius: 3px;
+                    &:hover{
+                        @include hover-btn-carrito;
+                    }
+                }
+                .like{
+                    width: 4vw;
+                    height: 6vh;
+                    background-color: $fondoHeader;
+                    color: $fontText;
+                    border: 0;
+                    border-radius: 3px;
+                    &:hover{
+                        @include hover-btn-carrito;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//MEDIA QUERYS//
+
+@media (max-width: 1030px){
+    .mainProductos{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        .cardTienda{
+            width: 80vw;
+            .cardTalles{
+                width: 35%;
+                .colores{
+                    .color1, .color2, .color3,.color4, .color5{
+                        @include botonMediano-color;
+                    }
+                }
+            }
+            .cardDescripcion{
+                .desc{    
+                    margin-top: 1rem;
+                    .pDesc{
+                        font-size: 0.8rem;
+                        height: 10vh;
+                        margin-bottom: 2.5rem;
+                    }
+                    p.categoria{
+                        font-family: 'Lexend Tera', sans-serif;
+                        padding-top: 5px;
+                        font-weight: bolder;
+                    }
+                    .modelo{
+                        font-family: 'Lexend Tera', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1rem;
+                    }
+                    h5{
+                        font-family: 'Lexend Tera', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1rem;
+                    }
+                }
+                .boton{
+                    width: 35vw;
+                    .agregar{
+                        width: 25vw;
+                        height: 6vh;
+                    }
+                }
+            }
+        }    
+    }
+}
+@media (max-width: 450px){
+    .mainProductos{
+        .cardTienda{
+            @include flex-column;
+            height: 90vh;
+            .cardTalles{
+                width: 100%;
+                p{
+                    padding-top: 0;
+                }
+                .colores{
+                    .color1, .color2, .color3,.color4, .color5{
+                        @include botonChico-color;
+                    }
+                }
+            }
+            .cardDescripcion{
+                margin-top: 0;
+                width: 80vw;
+                height: 55vh;
+                .desc{
+                    p.categoria{
+                        font-family: 'Lexend Tera', sans-serif;
+                        font-weight: bolder;
+                        font-size: .7rem;
+                        text-align: center;
+                    }
+                    .modelo{
+                        font-family: 'Lexend Tera', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+                    h5{
+                        font-family: 'Lexend Tera', sans-serif;
+                        font-weight: bolder;
+                        font-size: 1rem;
+                        text-align: center;
+                    }                   
+                }
+                .boton{
+                    @include flex-row;
+                    width: 77vw;
+                    justify-content: center;
+                    .agregar{
+                        width: 50vw;
+                        height: 6vh;
+                    }
+                    .like{
+                        width: 10vw;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

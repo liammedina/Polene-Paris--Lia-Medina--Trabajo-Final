@@ -1,0 +1,12 @@
+$social:(
+    twitter: #6ebbf7,
+    instagram: #863886,
+    facebook: #3b5998,
+    gmail: #dd4b39,
+);
+
+@each $redSocial, $color in $social {
+    .#{$redSocial}{
+        color: $color;
+    }
+}

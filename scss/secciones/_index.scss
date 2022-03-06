@@ -1,0 +1,149 @@
+.mainIndex{
+    background-image: linear-gradient(to bottom, #535152, #4b4a4b, #434243, #3b3b3c, #343435, #2e2e2f, #272829, #212223, #1b1c1d, #141616, #0c0f0e, #020403);
+    width: 100%;
+    .cardsPortada{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 30vh;
+        .card1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            @include card1($anchoCard);
+            figcaption{
+                font-family: 'Lexend Tera', sans-serif;
+                color: $fontCard1;
+            }
+            .h2Portada{
+                @extend %fontMarca;
+                color: $fontMarca;
+            }
+            .imgCardPortada{
+                height: 40vh;
+                background-image: linear-gradient(to top, #8a7d4e, #a29464, #baac7b, #d3c492, #ecddaa);
+                border-radius: 10%;
+            }
+            .pPortada{
+                @extend %parrafoPortada;
+                color: $fontCard1;
+            }
+        }
+    }
+    hr{
+        @extend %hr
+    }
+    .divFigure{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        .figure{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 40px;
+            img{
+                border: solid 5px $font1;
+            }
+            p{
+                width: 50vw;
+                font-family: 'Montserrat Alternates', sans-serif;
+                color: $fontCard1;
+            }
+            h2{
+                color: $fontText;
+                font-size: 1.5rem;
+            }
+            .text-muted1{
+                @include text-muted1($fontMarca);
+            }
+        }
+    }
+}
+
+//MEDIA QUERYS//
+
+@media(max-width: 1200px){
+    .mainIndex{
+        .cardsPortada{
+            padding-top: 15vh;
+            .card1{
+                @include card2($anchoCard1);
+                .imgCardPortada{
+                    height: 40vh;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .mainIndex{
+        .cardsPortada{
+            padding-top: 40vh;
+            .card1{
+                @include card3($anchoCard2);
+                .imgCardPortada{
+                    height: 40vh;
+                }
+            }
+        }
+    }
+    .divFigure{
+        .figure{
+            .pFigure{
+                margin: 0 20px;
+            }
+            .figCaption, h2{
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .mainIndex{
+        .cardsPortada{
+            padding-top: 10vh;
+            .card1{
+                @include card4($anchoCard3);
+                .imgCardPortada{
+                    height: 40vh;
+                }
+            }
+        }
+        .divFigure{
+            align-content: center;
+            width: 100vw;
+            .figure{
+                display: flex;
+                flex-direction: column;
+                p{
+                    width: 80vw;
+                    margin: 0 20px;
+                    font-size: .8rem;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+                img{
+                    width: 60vw;
+                }
+                figcaption .figCaption{
+                    text-align: center;
+                }
+                h2{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                .text-muted1{
+                    font-size: 2rem;
+                }
+            }
+        }
+        
+    }
+}

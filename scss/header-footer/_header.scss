@@ -1,0 +1,113 @@
+header{
+    position: relative;
+    height: 100vh;
+    width: 98.75vw;
+    z-index: 50;
+    .ratio{
+        position: absolute;
+    }
+    .navbar{
+        padding-top: 0;
+        width: 98vw;
+    }
+    .navBarResponsive{
+        display: none;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+        width: 100%;
+            ul li a{
+            color: $font1;
+            font-size: 17px;
+            font-family: 'Lexend Tera', sans-serif;
+            font-weight:bold;
+            text-shadow: 4px 4px 5px rgba(12, 12, 12, 0.84);
+            align-items: center;
+            &:hover{
+                transform: scale(1.1);
+                transition: 500ms;
+                color: $font1;
+            }
+            .nav-link a{
+                color: $font1;
+                font-size: 20px;
+                font-family: 'Lexend Tera', sans-serif;
+                font-weight: bold;
+                text-shadow: 4px 4px 5px rgba(12, 12, 12, 0.84);
+                align-items: center;
+            }
+        }
+    }
+}
+.headerPages{
+    width: 98.75vw;
+    height: 15vh;
+    background-color: $fondoHeader;
+    .navBarResponsive{
+        display: none;
+    }
+    .navbar-collapse{
+        background-color: $fondoHeader;
+        justify-content: flex-end;
+        width: 100%;
+            ul li a{
+            color: $font1;
+            font-size: 17px;
+            font-family: 'Lexend Tera', sans-serif;
+            font-weight: bold;
+            text-shadow: 4px 4px 5px rgba(12, 12, 12, 0.84);
+            align-items: center;
+            &:hover{
+                transform: scale(1.1);
+                transition: 500ms;
+                color: $font1;
+            }
+            .nav-link a{
+                color: $font1;
+                font-size: 20px;
+                font-family: 'Lexend Tera', sans-serif;
+                font-weight: bold;
+                text-shadow: 4px 4px 5px rgba(12, 12, 12, 0.84);
+                align-items: center;
+            }
+        }
+    }
+}
+
+//MEDIA QUERYS//
+
+@media (max-width: 1080px){
+    header{
+        height: 85vh;
+    }
+    .headerPages{
+        height: 15vh;
+        background-color: $fondoHeader;
+        .navbar-collapse{
+        background-color: $fondoHeader;
+        justify-content: flex-end;
+        width: 100%;
+            ul li a{
+            &:hover{
+                transform: none;
+                transition: 300ms;
+                color: $fontText;
+                }
+            }
+        }
+    }            
+}
+@media (max-width: 800px){
+    header{
+        height: 75vh;
+    }
+}
+
+@media (max-width: 800px){
+    header{
+        height: 40vh;
+    }
+}
+
+
+

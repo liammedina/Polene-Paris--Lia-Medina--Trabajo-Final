@@ -1,0 +1,64 @@
+.mainContacto{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: none;
+    @include flex-row;
+    img{
+        height: 70vh;
+        margin: 10vh 0;
+    }
+    form{
+        background-color: white;
+        padding: 5vh 0 0 6vw;
+        width: 50vw;
+        font-family: 'Montserrat Alternates', sans-serif;
+        .renglon{
+            width: 30vw;
+        }
+    }
+}
+
+//Media Querys//
+
+@media (max-width: 1080px){
+    .mainContacto{
+        
+        img{
+            height: 50vh;
+            margin: 25vh 0;
+        }
+        form{
+        padding: 5vh 0 0 0vw;
+        width: 50vw;
+            h3{
+                font-size: 20px;
+                text-align: center;
+            }
+            p{
+                font-size: 15px;
+                
+            }
+            .renglon{
+                width: 35vw;
+                }
+        }
+    }
+}
+@media (max-width: 425px){
+    .mainContacto{
+        @include flex-column;
+        img{
+            height: 50vh;
+            margin: 10vh 0;
+        }
+        form{
+            padding: 5vh 0 0 6vw;
+            width: 100vw;
+            .renglon{
+                width: 88vw;
+        }
+        
+        }
+    }
+}
