@@ -1,7 +1,7 @@
 header{
     position: relative;
     height: 100vh;
-    width: 98.75vw;
+    width: 100vw;
     z-index: 50;
     .ratio{
         position: absolute;
@@ -79,7 +79,7 @@ header{
 @media (max-width: 1080px){
     header{
         width: 100vw;
-        height: 85vh;
+        height: 100vh;
     }
     .headerPages{
         width: 100vw;
@@ -107,10 +107,15 @@ header{
 
 @media (max-width:450px){
     header{
-        height: 30vh;
+        height: 39vh;
     }
 }
 
+@media (max-width:330px){
+    header{
+        height: 30vh;
+    }
+}
 
 
 

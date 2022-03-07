@@ -67,7 +67,7 @@
 
 //MEDIA QUERYS//
 
-@media(max-width: 1200px){
+@media(max-width: 1080px){
     .mainIndex{
         .cardsPortada{
             padding-top: 15vh;
@@ -84,7 +84,7 @@
 @media(max-width: 800px){
     .mainIndex{
         .cardsPortada{
-            padding-top: 40vh;
+            padding-top: 15vh;
             .card1{
                 @include card3($anchoCard2);
                 .imgCardPortada{
@@ -105,7 +105,7 @@
     }
 }
 
-@media(max-width: 500px){
+@media(max-width: 450px){
     .mainIndex{
         .cardsPortada{
             padding-top: 10vh;
@@ -155,34 +155,6 @@
                 @include card5($anchoCard4);
                 .imgCardPortada{
                     height: 40vh;
-                }
-            }
-        }
-        .divFigure{
-            align-content: center;
-            width: 100vw;
-            .figure{
-                display: flex;
-                flex-direction: column;
-                p{
-                    width: 80vw;
-                    margin: 0 20px;
-                    font-size: .8rem;
-                    text-align: center;
-                    margin: 10px 0;
-                }
-                img{
-                    width: 60vw;
-                }
-                figcaption .figCaption{
-                    text-align: center;
-                }
-                h2{
-                    font-size: 1rem;
-                    text-align: center;
-                }
-                .text-muted1{
-                    font-size: 1.5rem;
                 }
             }
         }
