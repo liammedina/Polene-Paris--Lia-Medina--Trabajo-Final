@@ -38,6 +38,16 @@
     box-shadow: 4px 4px 8px rgb(44, 43, 43);
     background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
 }
+@mixin card5($anchoCard4){
+    height: 80vh;
+    width: $anchoCard4;
+    text-align: center;
+    margin: 4vh;
+    border-radius: 0 20% 0 20%;
+    box-shadow: 4px 4px 8px rgb(44, 43, 43);
+    background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152);
+}
+
 @mixin fotoProducto {
     height: 50vh;
 }

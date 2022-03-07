@@ -1,7 +1,7 @@
 header{
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 98.75vw;
     z-index: 50;
     .ratio{
         position: absolute;
@@ -40,7 +40,7 @@ header{
     }
 }
 .headerPages{
-    width: 100vw;
+    width: 98.75vw;
     height: 15vh;
     background-color: $fondoHeader;
     .navBarResponsive{
@@ -78,9 +78,11 @@ header{
 
 @media (max-width: 1080px){
     header{
+        width: 100vw;
         height: 85vh;
     }
     .headerPages{
+        width: 100vw;
         height: 15vh;
         background-color: $fondoHeader;
         .navbar-collapse{
@@ -103,11 +105,18 @@ header{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width:450px){
     header{
         height: 40vh;
     }
 }
+
+@media (max-width:330px){
+    header{
+        height: 30vh;
+    }
+}
+
 
 
 

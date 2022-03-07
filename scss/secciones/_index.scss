@@ -144,6 +144,47 @@
                 }
             }
         }
-        
+    }
+}
+
+@media(max-width: 330px){
+    .mainIndex{
+        .cardsPortada{
+            padding-top: 0;
+            .card1{
+                @include card5($anchoCard4);
+                .imgCardPortada{
+                    height: 40vh;
+                }
+            }
+        }
+        .divFigure{
+            align-content: center;
+            width: 100vw;
+            .figure{
+                display: flex;
+                flex-direction: column;
+                p{
+                    width: 80vw;
+                    margin: 0 20px;
+                    font-size: .8rem;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+                img{
+                    width: 60vw;
+                }
+                figcaption .figCaption{
+                    text-align: center;
+                }
+                h2{
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                .text-muted1{
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
 }

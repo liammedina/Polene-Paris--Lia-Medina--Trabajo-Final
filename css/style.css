@@ -32,7 +32,7 @@
 header {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 98.75vw;
   z-index: 50; }
   header .ratio {
     position: absolute; }
@@ -64,7 +64,7 @@ header {
         align-items: center; }
 
 .headerPages {
-  width: 100vw;
+  width: 98.75vw;
   height: 15vh;
   background-color: #535152; }
   .headerPages .navBarResponsive {
@@ -94,8 +94,10 @@ header {
 
 @media (max-width: 1080px) {
   header {
+    width: 100vw;
     height: 85vh; }
   .headerPages {
+    width: 100vw;
     height: 15vh;
     background-color: #535152; }
     .headerPages .navbar-collapse {
@@ -111,9 +113,13 @@ header {
   header {
     height: 75vh; } }
 
-@media (max-width: 800px) {
+@media (max-width: 450px) {
   header {
     height: 40vh; } }
+
+@media (max-width: 330px) {
+  header {
+    height: 30vh; } }
 
 .mainIndex {
   background-image: linear-gradient(to bottom, #535152, #4b4a4b, #434243, #3b3b3c, #343435, #2e2e2f, #272829, #212223, #1b1c1d, #141616, #0c0f0e, #020403);
@@ -235,6 +241,41 @@ header {
         text-align: center; }
       .mainIndex .divFigure .figure .text-muted1 {
         font-size: 2rem; } }
+
+@media (max-width: 330px) {
+  .mainIndex .cardsPortada {
+    padding-top: 0; }
+    .mainIndex .cardsPortada .card1 {
+      height: 80vh;
+      width: 95vw;
+      text-align: center;
+      margin: 4vh;
+      border-radius: 0 20% 0 20%;
+      box-shadow: 4px 4px 8px #2c2b2b;
+      background-image: linear-gradient(to bottom, #2a2a2a, #343334, #3e3d3e, #484748, #535152); }
+      .mainIndex .cardsPortada .card1 .imgCardPortada {
+        height: 40vh; }
+  .mainIndex .divFigure {
+    align-content: center;
+    width: 100vw; }
+    .mainIndex .divFigure .figure {
+      display: flex;
+      flex-direction: column; }
+      .mainIndex .divFigure .figure p {
+        width: 80vw;
+        margin: 0 20px;
+        font-size: .8rem;
+        text-align: center;
+        margin: 10px 0; }
+      .mainIndex .divFigure .figure img {
+        width: 60vw; }
+      .mainIndex .divFigure .figure figcaption .figCaption {
+        text-align: center; }
+      .mainIndex .divFigure .figure h2 {
+        font-size: 1rem;
+        text-align: center; }
+      .mainIndex .divFigure .figure .text-muted1 {
+        font-size: 1.5rem; } }
 
 .mainColeccion {
   background-image: linear-gradient(to right top, #6f6964, #8d8883, #aba9a4, #cccac6, #edede9);
