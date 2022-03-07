@@ -57,8 +57,26 @@
             width: 100vw;
             .renglon{
                 width: 88vw;
+            }
         }
-        
+    }
+}
+@media (max-width: 330px){
+    .mainContacto{
+        @include flex-column;
+        img{
+            height: 40vh;
+            margin: 10vh 0;
+        }
+        form{
+            padding: 5vh 0 0 6vw;
+            width: 100vw;
+            .renglon{
+                width: 88vw;
+            }
+            p{
+                text-align: center;
+            }
         }
     }
 }

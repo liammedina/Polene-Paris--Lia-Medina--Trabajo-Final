@@ -150,7 +150,7 @@
 @media(max-width: 330px){
     .mainIndex{
         .cardsPortada{
-            padding-top: 0;
+            padding-top: 10vw;
             .card1{
                 @include card5($anchoCard4);
                 .imgCardPortada{

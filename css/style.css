@@ -115,10 +115,6 @@ header {
 
 @media (max-width: 450px) {
   header {
-    height: 40vh; } }
-
-@media (max-width: 330px) {
-  header {
     height: 30vh; } }
 
 .mainIndex {
@@ -244,7 +240,7 @@ header {
 
 @media (max-width: 330px) {
   .mainIndex .cardsPortada {
-    padding-top: 0; }
+    padding-top: 10vw; }
     .mainIndex .cardsPortada .card1 {
       height: 80vh;
       width: 95vw;
@@ -660,6 +656,22 @@ main {
       width: 100vw; }
       .mainContacto form .renglon {
         width: 88vw; } }
+
+@media (max-width: 330px) {
+  .mainContacto {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .mainContacto img {
+      height: 40vh;
+      margin: 10vh 0; }
+    .mainContacto form {
+      padding: 5vh 0 0 6vw;
+      width: 100vw; }
+      .mainContacto form .renglon {
+        width: 88vw; }
+      .mainContacto form p {
+        text-align: center; } }
 
 footer {
   display: flex;
